@@ -1,11 +1,11 @@
-# oplib_jd170
+# pipeline_parallel_bubble_dedup
 
 **在算子库维护工程师·流水线并行气泡比例里找出重复内容并给出归并建议。**
 
-`oplib_jd170` —— 对内容做归一化与分片比对，找出算子库维护工程师·流水线并行气泡比例上的重复项并按相似度归并
+`pipeline_parallel_bubble_dedup` —— 对内容做归一化与分片比对，找出算子库维护工程师·流水线并行气泡比例上的重复项并按相似度归并
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`oplib_jd170.py` 拷走就能用
+- 单文件，`pipeline_parallel_bubble_dedup.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install geist45-oplib_jd170
+pip install geist45-pipeline_parallel_bubble_dedup
 ```
 
 装完直接用命令名调用：
 
 ```bash
-oplib_jd170 --help
+pipeline_parallel_bubble_dedup --help
 ```
 
-也可以不用安装，直接把 `oplib_jd170.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `pipeline_parallel_bubble_dedup.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ oplib_jd170 --help
 ## 用法
 
 ```bash
-python oplib_jd170.py --file input.txt
-python oplib_jd170.py --text "示例内容"
-python oplib_jd170.py --file input.txt --json
+python pipeline_parallel_bubble_dedup.py --file input.txt
+python pipeline_parallel_bubble_dedup.py --text "示例内容"
+python pipeline_parallel_bubble_dedup.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python oplib_jd170.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_oplib_jd170.py
+python test_pipeline_parallel_bubble_dedup.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_oplib_jd170.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/geist45/oplib_jd170>
+- GitHub 仓库：<https://github.com/geist45/pipeline_parallel_bubble_dedup>
 
 ---
 
@@ -79,7 +79,7 @@ python test_oplib_jd170.py
 geist45 做算子库维护工程师·流水线并行气泡比例相关的问题，方向对标小米的资深算子库维护工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://geist45.github.io>
-- 仓库：<https://github.com/geist45/oplib_jd170>
+- 仓库：<https://github.com/geist45/pipeline_parallel_bubble_dedup>
 
 ## 许可
 
